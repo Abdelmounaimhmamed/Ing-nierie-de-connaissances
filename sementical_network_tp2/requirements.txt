@@ -1,0 +1,4 @@
+spacy==3.5.0
+networkx==2.8.4
+matplotlib==3.7.1
+

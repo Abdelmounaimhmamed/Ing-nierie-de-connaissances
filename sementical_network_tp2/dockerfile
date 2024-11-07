@@ -1,0 +1,19 @@
+# Use the official Python image as a base
+FROM python:3.10-slim
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy requirements.txt and install dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Download the spaCy language model
+RUN python -m spacy download en_core_web_sm
+
+# Copy the local code to the container
+COPY . .
+
+# Set the default command to run your Python script
+CMD ["python", "tp2.py"]
+
