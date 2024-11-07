@@ -1,10 +1,6 @@
 
 
-
-docker build -t semantic-network-app .
-
+docker build -t tp2-project .
 
 
-
-docker run -it --rm semantic-network-app
-
+docker run --rm tp2-project
