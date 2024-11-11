@@ -15,4 +15,4 @@ COPY tp2.py .
 COPY graph.json .
 
 # Set the default command to run the Python script
-CMD ["python", "tp2.py"]
+CMD ["python", "jup.ipynb"]
